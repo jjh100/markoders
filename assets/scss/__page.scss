@@ -25,13 +25,13 @@ body {
 
 .main-login {
   z-index: 10;
-  display: none;
+  display: block;
 }
 
 
 #nav {
   width: 100%;
-  height: 10rem;
+  height: 10vh;
 }
 
 #Contents {}
@@ -116,8 +116,8 @@ body {
   width: 100%;
   height: 100vh;
   background: linear-gradient(to right bottom,
-      rgba(12, 12, 12, 0.932),
-      rgba(63, 63, 63, 0.9));
+      rgba(255, 254, 254, 1),
+      rgba(241, 241, 241, 1));
 
   #log-form {
     padding: 15rem 5rem;
@@ -159,6 +159,10 @@ body {
       border: none;
       background-color: rgba(31, 31, 31, 0);
       box-sizing: border-box;
+
+      .inp_box {
+        background-color: rgba(0, 0, 0, 0.08);
+      }
     }
 
     .inp-text {
@@ -192,6 +196,8 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background: inherit;
+    height: 5rem;
 
     .inp-chk {
       width: 50%;
@@ -250,6 +256,12 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    .nav_userID {
+      font-family: $에스코어5;
+        font-size: 2rem;
+      
+    }
 
     .nav_profile {
       position: relative;
@@ -609,7 +621,7 @@ body {
 
 /*^^modal_Window*/
 #modal_Window {
-  
+
   width: 100%;
   height: 100vh;
   background: rgba(0, 0, 0, 0.692);
@@ -643,7 +655,8 @@ body {
       background: #f2f2f2;
 
 
-      h1,h2 {
+      h1,
+      h2 {
         padding-top: 5%;
       }
 
