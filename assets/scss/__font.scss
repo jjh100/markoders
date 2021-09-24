@@ -1,0 +1,121 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'S-CoreDream-1Thin';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-1Thin.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'S-CoreDream-2ExtraLight';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-2ExtraLight.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'S-CoreDream-3Light';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'S-CoreDream-4Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-4Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'S-CoreDream-5Medium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-5Medium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'S-CoreDream-6Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-6Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'S-CoreDream-7ExtraBold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-7ExtraBold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'S-CoreDream-8Heavy';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-8Heavy.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'S-CoreDream-9Black';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-9Black.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+// 부트스트랩아이콘
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css");
+
+//메인색상 변수 
+:root{
+    //메인화면
+    --main-text:rgb(0, 0, 0);
+    // --main-text2:rgb(255, 255, 255);
+    --main-back:rgba(36, 33, 33, 0.4);
+
+
+    //사이드바
+    --sidebar-text: rgb(194, 188, 188);
+    --sidebar-back:  rgba(15, 15, 15, 0.2);
+    
+    // 로그인페이지 텍스트
+    --login-text:#fff;
+    //버튼 컬러
+    --btn-color: #D02C2F;
+    
+    //오더 페이지 
+    --order-back:rgba(252, 252, 252, 0.809);
+    --order-text:#000;
+
+}
+
+$에스코어1 :'S-CoreDream-1Thin';
+$에스코어2 :'S-CoreDream-2ExtraLight';
+$에스코어3 :'S-CoreDream-3Light';
+$에스코어4 :'S-CoreDream-4Regular';
+$에스코어5 :'S-CoreDream-5Medium';
+$에스코어6 :'S-CoreDream-6Bold';
+$에스코어7 :'S-CoreDream-7ExtraBold';
+$에스코어8 :'S-CoreDream-8Heavy';
+$에스코어9 :'S-CoreDream-9Black';
+$블랙한스 :'Black Han Sans', sans-serif;
+
+@mixin 가상선 {
+    border: 3px solid red;
+}
+
+@mixin 가상선1 {
+    border: 3px solid rgb(255, 81, 0);
+}
+
+@mixin 가상선2 {
+    border: 3px solid rgb(231, 224, 13);
+}
+
+@mixin 가상선3 {
+    border: 3px solid rgb(13, 231, 111);
+}
+
+@mixin 가상선4 {
+    border: 3px solid rgb(71, 13, 231);
+}

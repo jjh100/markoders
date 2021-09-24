@@ -1,0 +1,192 @@
+@charset "UTF-8";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+
+/*여백 초기화*/
+body,
+div,
+ul,
+li,
+dl,
+dt,
+ol,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+fieldset,
+legend,
+p,
+select,
+table,
+tr,
+td,
+textarea,
+button,
+form {
+  margin: 0;
+  padding: 0;
+}
+
+/*링크 초기화*/
+a {
+  text-align: center;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+
+}
+
+/*폰트 설정*/
+/*제목 태그 초기화*/
+h6,
+.h6,
+h5,
+.h5,
+h4,
+.h4,
+h3,
+.h3,
+h2,
+.h2,
+h1,
+.h1 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+/*블릿기호*/
+/* ld,dd,dt : 정의 목록형태그
+ol,li : 순서가 있는 목록형 태그
+ul,li 순서가 없는 목록형 태그 */
+ol,
+ul {
+  padding-left: 2rem;
+}
+
+ol,
+ul,
+dl {
+  margin-top: 0;
+}
+
+ol ol,
+ul ul,
+ol ul,
+ul ol,
+li {
+  margin-bottom: 0;
+  list-style: none;
+}
+
+dt {
+  font-weight: 700;
+}
+
+dd {
+  margin-bottom: 0.5rem;
+  margin-left: 0;
+}
+
+blockquote {
+  margin: 0 0 1rem;
+}
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+/*이미지 초기화*/
+img {
+  border: 0;
+  /* display: block; */
+  vertical-align: middle;
+  /*이화지 여백 초기화*/
+}
+
+/*보더 초기화*/
+fieldset {
+  border: 0;
+}
+
+// input초기화
+input {
+  -webkit-writing-mode: horizontal-tb !important;
+  text-rendering: auto;
+  color: initial;
+  letter-spacing: normal;
+  word-spacing: normal;
+  text-transform: none;
+  text-indent: 0px;
+  text-shadow: none;
+  display: inline-block;
+  text-align: start;
+  cursor: text;
+  margin: 0em;
+  padding: 1px 0px;
+  border-width: 2px;
+  border-style: inset;
+  border-color: rgba(61, 61, 60, 0.35);
+  border-image: initial;
+  
+}
+
+button {
+  background: inherit;
+  border: none;
+  box-shadow: none;
+  border-radius: 0;
+  padding: 0;
+  overflow: visible;
+  cursor: pointer
+}
+
+
+
+/*스타일 초기화*/
+em {
+  font-style: normal;
+}
+
+/* ir 효과 */
+.ir_pm {
+  /* 의미있는 이미지의 대체 텍스트를 제공하는 경우 */
+  display: block;
+  overflow: hidden;
+  font-size: 0;
+  line-height: 0;
+  text-indent: -9999px;
+}
+
+.ir_wa {
+  /*의미있는 이미지의 대체 텍스트로 이미지가 없어도 대체 텍스트를 보여주고자 할 때*/
+  display: block;
+  overflow: hidden;
+  position: relative;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+}
+
+.ir_so {
+  /*대체 텍스트가 아닌 접근성을 위한 숨김 텍스트*/
+  overflow: hidden;
+  position: absolute;
+  width: 0;
+  height: 0;
+  line-height: 0;
+  text-indent: -9999px;
+}
