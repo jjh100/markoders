@@ -22,16 +22,21 @@ function sideMenu_btn_fade(click_Selector, action_Selector, time = 400) {
 
 
 //Menu btn function(사이드 메뉴바 컨트롤)
-sideMenu_btn('.nav_hamMenu', '#side_Bar', 400)
-sideMenu_btn('#side_close_btn', '#side_Bar', 200)
+sideMenu_btn('.nav_hamMenu', '#side_Bar', 400);
+sideMenu_btn('#side_close_btn', '#side_Bar', 200);
 
 // //사이드 알람 버튼 컨트롤
-sideMenu_btn_silde('.sideAlarm_btn', '.sideAlarm_modal')
-sideMenu_btn_silde('.sideAlarm_close_btn', '.sideAlarm_modal')
+sideMenu_btn_silde('.sideAlarm_btn', '.sideAlarm_modal');
+sideMenu_btn_silde('.sideAlarm_close_btn', '.sideAlarm_modal');
 
 
 //네비 프로필 알람 버튼 컨트롤 
-sideMenu_btn_silde('.nav_profile', '.nav_loginfor')
+sideMenu_btn_silde('.nav_profile', '.nav_loginfor');
+
+//모델창 컨트롤(modla_window)
+sideMenu_btn_fade('.modal_close_btn','#modal_Window');
+sideMenu_btn_fade('#side_bar_settingM','#modal_Window');
+sideMenu_btn_fade('#nav_settingM','#modal_Window');
 
 
 
@@ -75,3 +80,34 @@ $('.sideAlarm_btn').click(function () {
   });
 
 })
+
+
+
+//theme_change_MACHINE
+function changeTheme(click_Selector, bgcColor) {
+  $(click_Selector).click(function () {
+    $(':root').css('--main-back', bgcColor);
+    $(':root').css('--sidebar-back', bgcColor);
+
+  })
+}
+
+//테마색 컨트롤러
+changeTheme('.theme_change_Black', 'rgba(36, 33, 33, 0.7)')
+changeTheme('.theme_change_White', 'rgba(252, 252, 252, 0.5)')
+changeTheme('.theme_change_Red', 'rgba(158, 4, 4, 0.7)')
+changeTheme('.theme_change_Indigo', 'rgba(5, 0, 12, 0.7)')
+
+
+//themefont_change_MACHINE
+function changeFontColor(click_Selector, fontColor) {
+  $(click_Selector).click(function () {
+    $(':root').css('--main-text', fontColor);
+    $(':root').css('--sidebar-text', fontColor);
+
+  })
+}
+
+//글자색 컨트롤러
+changeFontColor('.theme_change_Font_Black', '#000')
+changeFontColor('.theme_change_Font_White', '#fff')

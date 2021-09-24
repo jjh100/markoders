@@ -91,8 +91,10 @@
           <li class="nav_profile"><a href="#"><i class="bi bi-person-circle"></i></a>
             <ol class="nav_loginfor">
               <li><a href="#">Log out</a></li>
-              <li><hr></li>
-              <li>Settings</li>
+              <li>
+                <hr>
+              </li>
+              <li id="nav_settingM">Settings</li>
             </ol>
           </li>
           <li class="nav_hamMenu"><a href="#"><i class="bi bi-list"></i></a></li>
@@ -135,6 +137,21 @@
 
         </div>
       </div>
+
+      <!--// footer(푸터)-->
+      <section id="footer">
+        <div class="container">
+          <div class="row">
+            <div class="span12 col-md-12 text-center">
+              <h5>
+                <span id="clock"></span>
+              </h5>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--// footer(푸터)-->
+
     </section>
     <!--// main_content(컨텐츠)-->
 
@@ -165,7 +182,7 @@
       </ul>
 
       <ul class="sideicon">
-        <li><a href="#"><i class="bi bi-gear"></i><span>Settings</span></a></li>
+        <li><a href="#" id="side_bar_settingM"><i class="bi bi-gear"></i><span>Settings</span></a></li>
       </ul>
     </section>
     <!--// sidebar(사이드바)-->
@@ -189,19 +206,39 @@
     </section>
     <!--// side-alarm(사이드 알람)-->
 
-    <!--// footer(푸터)-->
-    <section id="footer">
-      <div class="container">
-        <div class="row">
-          <div class="span12 col-md-12 text-center">
-            <h5>
-              <span id="clock"></span>
-            </h5>
+    <!-- ^^modalwindow -->
+    <section id="modal_Window">
+      <div class="modal_Window_wrap">
+        <div class="modal_close_btn"><i class="bi bi-x-lg"></i></div>
+        <div class="container">
+          <div class="modal_Window_content">
+            <h1>테마설정</h1>
+            <hr>
+            <h2>테마배경색</h2>
+            <p>페이지의 배경색을 선택해주세요.</p>
+            <hr>
+            <div class="row">
+              <div class="color_cho theme_change_Black"></div>
+              <div class="color_cho theme_change_White"></div>
+              <div class="color_cho theme_change_Red"></div>
+              <div class="color_cho theme_change_Indigo"></div>
+            </div>
+            <hr>
+            <h2>글자색</h2>
+            <p>페이지의 글자색을 선택해주세요</p>
+            <hr>
+            <div class="row">
+              <div class="color_cho theme_change_Font_Black"></div>
+              <div class="color_cho theme_change_Font_White"></div>
+
+            </div>
           </div>
         </div>
+
       </div>
-    </section>
-    <!--// footer(푸터)-->
+  </div>
+  </section>
+  <!-- //modalwindow -->
   </div>
 
 
@@ -209,8 +246,7 @@
   <!-- jQuery (부트스트랩의 자바스크립트 플러그인을 위해 필요합니다) -->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script>
-
-
+   
   </script>
 
   <!-- 모든 컴파일된 플러그인을 포함합니다 (아래), 원하지 않는다면 필요한 각각의 파일을 포함하세요 -->

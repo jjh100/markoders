@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,71 +7,64 @@
     <title>Document</title>
 </head>
 <style>
-    body {
-        background: url('../icons/mark-cc-lo.png')no-repeat 300px 400px fixed;
-    }
+    .photo_container {
+    display:table;
+    width:600px;
+    position:relative;
+    z-index:1;
+    margin:0 auto;
+}
+.photo_container img {
+    display:table-cell;
+    width:600px;
+    text-align:center;
+}
+.photo_nav {
+    display:table-cell;
+    width:660px;
+    height:100%;
+    position:absolute;
+    z-index:2;
+    top:0;
+    left:-30px;
+}
+.photo_nav p {
+    display:table;
+    width:100%;
+    height:100%;
+}
+.photo_nav p a {
+    display:table-cell;
+    width:50%;
+    height:100%;
+    vertical-align:middle;
+    font-weight:bold;
+    color:#555;
+    font-size:18px;
+    opacity:0.5;
+}
+.photo_nav p a:hover {
+    opacity:1;
+    text-decoration:none;
+}
+.btn_photo_prev {text-align:left}
+.btn_photo_next {text-align:right;}
 
-    table,
-    tr,
-    td,
-    th {
-        border: 1px solid #000;
-        direction: ltr;
-        border-collapse: collapse;
-        border-spacing: 100px 200px;
-    }
+
+
 </style>
-
 <body>
-
-    <table>
-        <tr>
-            <th>sksm</th>
-            <th>sksm2</th>
-            <th colspan="2">sksm2</th>
-        </tr>
-        <tr>
-            <td>somuja</td>
-            <td>somuja</td>
-            <td>somuja</td>
-            <td><audio controls>
-
-                <source src="/examples/media/sample_audio_ogg.ogg" type="audio/ogg">
-            
-                <source src="/examples/media/sample_audio_mp3.mp3" type="audio/mp3">
-            
-                이 문장은 사용자의 웹 브라우저가 audio 요소를 지원하지 않을 때 나타납니다!
-            
-            </audio></td>
-        </tr>
-        <tr>
-            <td>somuja</td>
-            <td colspan="3">somuja2</td>
-        </tr>
-        <tr>
-            <td>
-                <embed src="../../index.html" style="width:100%; height:700px">
-            </td>
-            <td colspan="3"><embed src="../pages/page.html" type=""></td>
-            <button id="btn">버튼 클릭</button>
-        </tr>
-
-    </table>
-
-
-
-
-
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script>
-        $('#btn').click(function () {
-
-            console.log($('input[name = favcolor ]').val());
-
-        })
-    </script>
-
+    <div class="photo_container">
+        <img src="https://t1.daumcdn.net/cfile/tistory/2377DF425359B4DA10" alt="">
+        <div class="photo_nav">
+            <p>
+                <a href="" class="btn_photo_prev"><</a>
+                <a href="" class="btn_photo_next">></a>
+            </p>
+        </div>
+    </div>
+    
+    
 
 </body>
-
 </html>
