@@ -31,7 +31,7 @@ body {
 
 #nav {
   width: 100%;
-  height: 10vh;
+  height: 8vh;
 }
 
 #Contents {}
@@ -135,7 +135,8 @@ body {
 
   button,
   input {
-    padding: 1rem 10rem;
+    width: 100%;
+    padding: 1rem 3rem;
     font-size: 1.5rem;
     line-height: 1.5;
     height: 5rem;
@@ -145,7 +146,7 @@ body {
   .inp_box {
     background-color: rgba(133, 130, 130, 0.116);
     border: none;
-    color: #fff;
+    color: rgb(0, 0, 0);
   }
 
 
